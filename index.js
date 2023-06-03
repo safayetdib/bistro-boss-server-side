@@ -47,10 +47,10 @@ async function run() {
 		// Connect the client to the server	(optional starting in v4.7)
 		await client.connect();
 
-		const usersCollection = client.db('bistroDb').collection('users');
-		const menuCollection = client.db('bistroDb').collection('menu');
-		const reviewCollection = client.db('bistroDb').collection('reviews');
-		const cartCollection = client.db('bistroDb').collection('carts');
+		const usersCollection = client.db('bistro-db').collection('users');
+		const menuCollection = client.db('bistro-db').collection('menu');
+		const reviewCollection = client.db('bistro-db').collection('reviews');
+		const cartCollection = client.db('bistro-db').collection('carts');
 
 		app.post('/jwt', (req, res) => {
 			const user = req.body;
